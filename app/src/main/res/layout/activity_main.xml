@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <com.canhub.cropper.CropImageView
+        android:layout_below="@+id/linear"
+        android:id="@+id/cropimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:scaleType="fitXY">
+
+    </com.canhub.cropper.CropImageView>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:layout_weight="1"
+        android:layout_below="@+id/cropimg"
+        android:id="@+id/upload"
+        android:text="Upload Image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/crop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@+id/upload"
+        android:text="CROP" />
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
